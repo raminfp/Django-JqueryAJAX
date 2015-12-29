@@ -11,9 +11,7 @@ def CallAjax(request):
 
         fname  = request.POST.get('fname')
         lname  = request.POST.get('lname')
-        data = {'fname':fname,'lname':lname}
-        print data
-
+        data = {'fname':fname,'lname':lname)
         return HttpResponse(json.dumps(data), content_type="application/json")
 
      else:
