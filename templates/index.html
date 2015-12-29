@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    {% load static from staticfiles %}
+
+    <script src="{% static '/static/js/jquery.js' %}"></script>
+    <script src="{% static '/static/js/ajax.js' %}"></script>
+</head>
+<body>
+
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" class="fname"  name="firstname" id="firstname" />
+
+    <br />
+
+    <input type="text" class="lname" name="lastname"  id="lastname" />
+
+    <input class="send" type="submit" value="Send">
+
+</form>
+
+<div class="show">
+
+
+
+</div>
+
+</body>
+</html>
