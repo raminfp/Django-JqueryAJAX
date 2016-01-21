@@ -12,16 +12,13 @@ jsonitem.push(item);
 
  model = jsonitem;
     $.ajax({
-        url: "/api/contact",
+        url: "/sendjsonlistmodel",
         datatype: 'json',
         type: 'POST',
         data: {'model[]': JSON.stringify(model)},
         success: function (data) {
             $(".seccuess").html(data).show();
-            $("#firstname").val("");
-            $("#lastname").val("");
-            $("#connect").val("");
-            $("#decreption").val("");
+           
         },
         
 // Get List of Django on view.py
