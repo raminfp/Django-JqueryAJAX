@@ -10,7 +10,7 @@ def UploadIMG(request):
         Getimg = request.FILES.dict()
         image = Getimg['file']
         f = ContentFile(image.read())
-        path = default_storage.save('C:\\Users\\RaminFP\\Desktop\\tmp\\1.png', f)
+        path = default_storage.save('PATH_SETTING(MADIA_ROOT)\\1.png', f)
         tmp_file = os.path.join(settings.MEDIA_ROOT, path)
         img = open(tmp_file.__str__(),'rb').read()
         o = Student(image=img)
