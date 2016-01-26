@@ -101,6 +101,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
+MEDIA_ROOT = "Project_Path_TMP" # this PATH for save image and read image to binary 
+
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
